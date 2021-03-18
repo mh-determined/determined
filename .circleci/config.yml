@@ -565,7 +565,8 @@ commands:
             detVersion=<<parameters.det-version>>,\
             maxSlotsPerPod=<<parameters.gpus-per-machine>>,\
             checkpointStorage.type=gcs,\
-            checkpointStorage.bucket=det-ci
+            checkpointStorage.bucket=det-ci,\
+            defaultScheduler=coscheduler
       - set-master-address-gke:
           release-name: "ci"
           namespace: "default"
