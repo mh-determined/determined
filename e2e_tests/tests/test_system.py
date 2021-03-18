@@ -588,7 +588,7 @@ def test_gang_scheduling() -> None:
         print(ret_value)
 
     t = []
-    for i in range(2):
+    for _i in range(2):
         t.append(threading.Thread(target=submit_job))
     for i in range(2):
         t[i].start()
